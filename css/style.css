@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+body {
+    font-size: 100%;
+}
+.left-column {
+    width: 50%;
+    height: 100vh;
+    padding: 3rem;
+}
+.right-column {
+    width: 50%;
+}
+.name {
+    width: 90%;
+}
+.name h5 {
+    margin-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 2px
+}
+.name p {
+    font-size: 14px;
+    letter-spacing: 2px
+}
+.about {
+    width: 90%;
+   
+}
+.about p{
+    padding-top: 30px;
+    letter-spacing: 2.5px;
+    font-size: 14px;
+}
+.dates {
+    width: 10%;
+    height: 100%;
+}
+.events {
+    margin-top: 50px;
+    width: 100%
+}
+.events h4 {
+    padding-left: 70px;
+}
+ul.list {
+    list-style-type: circle;   
+    width: 90%;
+    float: left;
+    position: relative;
+    padding-left: 70px;
+}
+
+
+li {
+    font-size: 20px;
+}
+span {
+    font-size: 14px;
+}
+
+/* Small devices */
+@media only screen and (max-width: 992px) {
+    .left-column {
+        width: 100%;
+        height: auto;
+    }
+    .right-column {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .left-column {
+        position: fixed;
+    }
+    .right-column {
+        float: right
+    
+    }
+}
+
+/* img library */
+
+#project1, #project2, #project3, #project4 {
+    position: relative;
+    padding: 1Rem 3rem;
+    font-family: helvetica, sans-serif;
+    font-size: 1em;
+    width: 500px;
+    height: 650px;
+    float: right;
+    margin-bottom: 50px;
+  }
+  
+.imgslide {
+    width: 100%;
+    height: 100%
+}
+  .pagination, .pagination1 {
+      margin-bottom: 0px;
+  }
+  
+  .imgslide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .prev {
+    cursor: w-resize;
+    position: absolute;
+    height: 100%;
+    height: 100%;
+    width: 50%;
+  }
+  
+  .next {
+    cursor: e-resize;
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+  }
