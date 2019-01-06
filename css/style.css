@@ -37,53 +37,36 @@ body {
 .dates {
     width: 10%;
     height: 100%;
+    float: left
 }
 .events {
     margin-top: 50px;
     width: 100%
 }
 .events h4 {
-    padding-left: 70px;
+    letter-spacing: 2px;
+    font-weight: 100
+}
+span:empty::after{
+    content: attr(data-empty-message);
+  }
+  ul.dates {
+    padding-left: 0px;
+    list-style-type: none;  
 }
 ul.list {
     list-style-type: circle;   
     width: 90%;
     float: left;
-    position: relative;
-    padding-left: 70px;
+    padding-left: 0px;
+    white-space: nowrap; 
 }
-
-
-li {
-    font-size: 20px;
-}
-span {
+ span {
     font-size: 14px;
 }
 
-/* Small devices */
-@media only screen and (max-width: 992px) {
-    .left-column {
-        width: 100%;
-        height: auto;
-    }
-    .right-column {
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .left-column {
-        position: fixed;
-    }
-    .right-column {
-        float: right
-    
-    }
-}
-
 /* img library */
-
-#project1, #project2, #project3, #project4 {
+.projects {
     position: relative;
     padding: 1Rem 3rem;
     font-family: helvetica, sans-serif;
@@ -92,7 +75,7 @@ span {
     height: 650px;
     float: right;
     margin-bottom: 50px;
-  }
+}
   
 .imgslide {
     width: 100%;
@@ -122,3 +105,50 @@ span {
     height: 100%;
     width: 50%;
   }
+
+  /* Small devices */
+@media only screen and (max-width: 992px) {
+    .left-column {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        margin-bottom: 50px;
+        overflow: scroll
+    }
+    .about {
+        width: 100%;
+    }
+    .right-column {
+        width: 100%;
+        padding: 0
+    }
+    .projects {
+        float: none !important;
+        margin: 20px auto 50px auto;
+        width: 80%;
+        height: auto;
+        padding: 0
+    }
+    ul.list {
+        white-space: normal; 
+    }
+    span {
+        font-size: 11px;
+    }
+
+}
+/* laptops */
+@media only screen and (min-width: 992px) {
+    .left-column {
+        position: fixed;
+    }
+    .right-column {
+        float: right; 
+    }
+}
+/* Large laptops and dekstops */
+@media only screen and (min-width: 1400px) {
+    .right-column {
+        padding-right: 10rem
+    }
+}
