@@ -79,11 +79,11 @@ li {
 /* img library */
 .projects {
     position: relative;
-    /* padding: 1Rem 3rem; */
+    padding: 1Rem 3rem;
     font-family: helvetica, sans-serif;
     font-size: 1em;
-    width: 400px;
-    height: 550px;
+    max-width: 400px;
+    max-height: 550px;
     float: right;
     margin-bottom: 50px;
 }
@@ -92,8 +92,8 @@ li {
     width: 100%;
     height: 100%
 }
-  .pagination {
-      margin-bottom: 0px;
+  .pagination, .img-name {
+      margin: 2px 0 0 0;
       font-size: 13px
   }
   .img-name {
@@ -162,11 +162,7 @@ li {
         float: right; 
         margin-top: 15px
     }
-    .about {
-        width: 100%;
-        padding: 50px 20px 0 0
-       
-    }
+
     .events {
         padding-top: 120px;
         width: 100%;
@@ -180,24 +176,31 @@ li {
 @media only screen and (max-width: 1095px) {
     .list {
         white-space: normal; 
-        padding-left: 22px;
+        padding-left: 28px;
         padding-bottom: 10px;
-        width: 100%
+        width: 90%
     }
     .list span {
         font-size: 13px;
         padding-top: 3px;
+        position: relative;
+        left: -6px;
     }
-    /* .list li {
-        list-style-type: circle;
-    } */
     .dates {
         float: left;
-        margin-left: 5px;
-        font-weight: bold
+        /* margin-left: 5px; */
     }
     .events {
-        padding-top: 60px;
+        padding-top: 30px;
+    }
+    .about {
+        width: 100%;
+        padding: 20px 0 0 0
+       
+    }
+    .left-column {
+        height: auto;
+        position: relative;
     }
 }
 

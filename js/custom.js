@@ -18,47 +18,35 @@ function plusDivs(project, n) {
 function showDivs(project, index) {
   let i;
   let x = document.getElementById(project).getElementsByClassName("slides");
-  let imgName = document.getElementById(project).getElementsByTagName("img")[0].alt
   if (index > x.length) { index = 1 }
   if (index < 1) { index = x.length }
   for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+    x[i].style.display = "none";
   }
   x[index - 1].style.display = "block";
   document.getElementById(project).getElementsByClassName("pagination")[0].innerText = index + ' / ' + x.length;
-  document.getElementById(project).getElementsByClassName("img-name")[0].innerText =  imgName;
   projectIndexes[project] = index;
-  console.log(imgName[3]);
 
-  var elements = document.querySelector('.imgslide').children;
+  let elements = document.querySelector('.imgslide').children;
 
-let altArray = [];
-for(let i = 0; i < elements.length; i++) {
-    if(elements[i].src !== undefined) {
-        altArray.push(elements[i].alt);
-        document.getElementById(project).getElementsByClassName("img-name")[0].innerText =  altArray[index -1];
+  let imgNames = [];
+  for (let i = 0; i < elements.length; i++) {
+    if (elements[i].src !== undefined) {
+      imgNames.push(elements[i].alt);
+      document.getElementById(project).getElementsByClassName("img-name")[0].innerText = imgNames[index - 1];
     }
+  }
+  console.log(imgNames[index - 1]);
 }
-
-console.log(altArray[index -1]);
-
-}
-
-
-// $(document).ready(function(){
-//   console.log('ttt');
-  
-//     $(".prev").css({'height':($("img").height()+'%')});
-// });
 
   // Show random text onload
 
-  
+
 
 //   window.setInterval(function() {
 //     randomNumber = Math.floor(Math.random()*3+1);
 //     console.log(randomNumber);
-    
+
 // 	if (randomNumber == 1) {
 // 		document.getElementById("p1").style.visibility = "visible";
 // 		document.getElementById("p2").style.visibility = "hidden";
