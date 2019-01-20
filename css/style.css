@@ -13,6 +13,7 @@ body {
     width: 50%;
     height: 100vh;
     padding: 3rem;
+    overflow: scroll
 }
 .right-column {
     width: 50%;
@@ -164,7 +165,7 @@ li {
     }
 
     .events {
-        padding-top: 120px;
+        padding-top: 40px;
         width: 100%;
     }
 }
@@ -200,7 +201,6 @@ li {
     }
     .left-column {
         height: auto;
-        position: relative;
     }
 }
 
@@ -211,5 +211,8 @@ li {
     }
     .right-column {
         padding-right: 15rem
+    }
+    .events {
+        padding-top: 120px;
     }
 }
