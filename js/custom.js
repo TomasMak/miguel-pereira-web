@@ -39,6 +39,7 @@ function showDivs(project, index) {
   console.log(imgNames[index - 1]);
 }
 
+
   // Show random text onload
 
 
