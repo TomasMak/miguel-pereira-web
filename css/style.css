@@ -50,8 +50,9 @@ body {
     padding-top: 70px;
     margin-bottom: 10px;
     width: 100%;
+    height: auto
 }
-.events h4 {
+.events h5 {
     letter-spacing: 2px;
     font-weight: 100;
     font-size: 14px;
@@ -86,12 +87,12 @@ li {
 .projects {
     position: relative;
     font-size: 1em;
-    width: 60%;
+    width: 65%;
     height: 80%;
     /* max-width: 400px;
     max-height: 550px; */
     float: right;
-    margin: 40px;
+    margin: 20px 40px 20px 0;
 }
   
 .imgslide {
@@ -170,6 +171,9 @@ li {
     .events {
         padding-top: 30px;
     }
+    /* .events h5 {
+        padding-left: 63.50px;
+    } */
  
 }
 /* laptops */
@@ -196,14 +200,13 @@ li {
     .list {
         white-space: normal; 
         padding-left: 28px;
-        padding-bottom: 10px;
         width: 90%
     }
     .list span {
         font-size: 13px;
         padding-top: 3px;
         position: relative;
-        left: -6px;
+        left: -3px;
     }
     .dates {
         float: left;
@@ -231,6 +234,9 @@ li {
         padding-right: 20rem
     }
     .events {
-        padding-top: 120px;
+        padding-top: 40px;
+    }
+    .about {
+        padding-top: 40px;
     }
 }
