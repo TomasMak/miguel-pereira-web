@@ -1,4 +1,29 @@
 // Project images galleries 
+window.onload = function () {
+
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+    return array;
+  }
+
+  var arr = [20, 60, 100, 140];
+  arr = shuffle(arr);
+
+  let ccc = document.getElementsByClassName("projects");
+  let i;
+  for (i = 0; i < ccc.length; i++) {
+    let rand = arr[i]
+    console.log(rand)
+    ccc[i].style.marginRight = rand + 'px'
+  }
+}
 
 let projectIndexes = {
   project1: 1,
@@ -18,6 +43,9 @@ function plusDivs(project, n) {
 function showDivs(project, index) {
   let i;
   let x = document.getElementById(project).getElementsByClassName("slides");
+  // let bb = Math.floor(Math.random() * 100)
+  //     console.log(bb)
+  //     document.getElementById(project).style.marginRight = bb + 'px'
   if (index > x.length) { index = 1 }
   if (index < 1) { index = x.length }
   for (i = 0; i < x.length; i++) {
@@ -26,6 +54,8 @@ function showDivs(project, index) {
   x[index - 1].style.display = "block";
   document.getElementById(project).getElementsByClassName("pagination")[0].innerText = index + ' / ' + x.length;
   projectIndexes[project] = index;
+
+  
 
   let elements = document.querySelector('.imgslide').children;
 
@@ -38,8 +68,6 @@ function showDivs(project, index) {
   }
   console.log(imgNames[index - 1]);
 }
-
-
   // Show random text onload
 
 
