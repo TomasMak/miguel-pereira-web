@@ -14,15 +14,18 @@ body {
 .left-column {
     width: 40%;
     height: 100vh;
-    padding: 3rem;
+    /* padding: 3rem; */
     padding-top: 16px;
     overflow: visible;
 }
 .right-column {
-    width: 50%;
+    width: 60%;
 }
 .name {
-    width: 20.1rem;
+    width: 39rem;
+    height: 33.3%;
+    /* padding-top: 300px; */
+    
 }
 .name h5 {
     margin-bottom: 0px;
@@ -31,31 +34,46 @@ body {
 }
 .name p {
     font-size: 12px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     text-align: left;
+    position: absolute;
+    bottom: 20px;    
+}
+.name span {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #333
+}
+.name button {
+    position: absolute;
+    color: black;
+    bottom: 10px; 
+    margin-top: 30px;   
 }
 .about {
     width: 100%;
-    padding-right: 50px;
+    height: 33.3%;
+    padding: 10px 20px 0 0;
     /* height: 50%; */
-    overflow: scroll
+    overflow: visible
 
 }
 .about p{
-    padding-top: 30px;
-    letter-spacing: 2px;
+    /* padding-top: 30px; */
+    letter-spacing: 0.5px;
     font-size: 13px;
+    margin:0;
 }
 .events {
     padding-top: 70px;
     margin-bottom: 10px;
     width: 100%;
-    height: 50%;
+    height: auto;
     overflow: visible
   
 }
 .events h5 {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 100;
     font-size: 14px;
 }
@@ -66,65 +84,86 @@ body {
       width: 10%;
       float: left;
       font-size: 13px;
-      letter-spacing: 2px;
+      letter-spacing: 0.5px;
       /* margin-right: 30px */
 }
 .list {
-    list-style-type: circle;   
+    list-style-type: none ;   
     width: 90%;
     float: left;
-    padding-left: 10px;
+    padding-left: 0px;
     white-space: normal;
     margin-bottom: 0px; 
-    overflow: visible
+    overflow: visible   
 }
  .list span {
     font-size: 13px;
-    letter-spacing: 2px
+    letter-spacing: 0.5px
 }
 li {
     font-size: 13px;
 }
 
 /* img library */
+.prjct {
+    /* min-height: 700px; */
+    padding: 1rem 3rem 3rem 3rem    ;
+}
 .projects {
     position: relative;
     font-size: 1em;
-    width: 65%;
+    width: auto;
     height: auto;
-    /* max-width: 400px;
-    max-height: 550px; */
     float: right;
-    margin: 50px 40px 50px 0;
+    /* max-width: 600px;
+    max-height: 600px;    */
+    margin: 0 40px 50px 0;
+    vertical-align: middle;
+    justify-content: center
+
+}
+#project1 {
+    margin-right: 0px;
+}
+#project2 {
+    margin-right: 170px;
+}
+#project3 {
+    margin-right: 50px;
+}
+#project4 {
+    margin-right: 150px;
+}
+#project5 {
+    margin-right: 0px;
+}
+#project6 {
+    margin-right: 0px;
 }
   
-.imgslide {
-    width: 100%;
-    height: 100%;
-    float: right;
-    /* padding: 10% */
-    
-}
+
   .pagination {
       margin: 0 0 0 5px;
       font-size: 13px;
   }
   .img-name {
-      font-size: 13px;
+      font-size: 12px;
       text-align: right;
-      margin: 2px 5px 0 0
+      margin: 2px 5px 0 0;
+      letter-spacing: 0.5px;
+  }
+  .imgslide img {
+    width: auto;
+    height: auto;
+    /* max-width: 600px;
+    max-height: 600px;  */
   }
   
-  .imgslide img {
-    width: 100%;
-    height: 100%;
-    image-orientation: from-image;
-  }
   
   .prev {
     cursor: w-resize;
     position: absolute;
-    height: 100%;
+    height: 105%;
     width: 50%;
     left: 0;
     top: 0;
@@ -134,7 +173,7 @@ li {
   .next {
     cursor: e-resize;
     position: absolute;
-    height: 100%;
+    height: 105%;
     width: 50%;
     right: 0;
     top: 0;
@@ -162,21 +201,29 @@ li {
     }
     .projects {
         margin: 20px auto 50px auto;
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
         padding: 0;
         float: none;
-        overflow: auto;
+        /* overflow: auto; */
     }
     .imgslide {
-        padding: 4%
+        /* padding: 4% */
+    }
+    .imgslide img {
+        width: 100%;
+        max-height: 900px;
     }
     .events {
         padding-top: 30px;
     }
-    /* .events h5 {
-        padding-left: 63.50px;
-    } */
+    .name {
+        width: 100%;
+        padding-top: 200px;
+    }
+    .prjct {
+        padding: 1.2rem;
+    }
  
 }
 /* laptops */
@@ -190,9 +237,19 @@ li {
     }
 
     .events {
-        padding-top: 40px;
+        /* padding-top: 100px; */
         width: 100%;
     }
+    .imgslide {
+        max-width: 600px;
+        max-height: 600px; 
+    }
+    .imgslide img {
+        width: auto;
+        height: auto;
+        max-width: 600px;
+        max-height: 600px; 
+      }
 }
 @media only screen and (min-width: 1095px) {
     .list {
