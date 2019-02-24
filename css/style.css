@@ -14,45 +14,19 @@ body {
 .left-column {
     width: 40%;
     height: 100vh;
-    /* padding: 3rem; */
+
     padding-top: 16px;
-    overflow: scroll;
+    position: relative;
+    /* background-color: lightgrey */
 }
 .right-column {
     width: 60%;
 }
-.name {
-    width: 39rem;
-    margin-top: 30px; 
-    /* height: 33.3%; */
-    /* padding-top: 300px; */
-    
-}
-.name h5 {
-    margin-bottom: 0px;
-    font-size: 14px;
-    letter-spacing: 2.25px
-}
-.name p {
-    font-size: 12px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    /* position: absolute; */
-    bottom: 20px; 
-    
-}
-.name span {
-    font-size: 13px;
-    letter-spacing: 0.5px;
-    color: #333
-}
-
 .about {
     width: 100%;
-    /* height: 20%; */
+    height: 95%;
     padding: 10px 20px 0 0;
-    /* height: 50%; */
-    overflow: scroll
+    
 }
 ::-webkit-scrollbar {
     width: 0px;
@@ -64,11 +38,29 @@ body {
     font-size: 13px;
     margin:0;
 }
+.name {
+    width: 100%;
+    margin-top: 0px; 
+    height: 5%;   
+}
+
+.name span {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    padding: 0 50px 0 50px;
+}
+ span:hover {
+    color: blue;
+    cursor: crosshair
+}
+#info1 {
+padding-left: 0px;
+}
 .events {
-    padding-top: 40px;
+    /* padding-top: 40px; */
     margin-bottom: 10px;
     width: 100%;
-    height: 40%;
+    height: 30%;
     overflow: visible
   
 }
@@ -94,7 +86,7 @@ body {
     padding-left: 0px;
     white-space: normal;
     margin-bottom: 0px; 
-    overflow: visible   
+    overflow: visible;   
 }
  .list span {
     font-size: 13px;
@@ -104,11 +96,19 @@ body {
 li {
     font-size: 13px;
 }
+.copy {
+    text-align: right;
+    font-size: 13px;
+    opacity: 0.5;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px
+}
 
 /* img library */
 .prjct {
     /* min-height: 700px; */
-    padding: 1rem 3rem 0rem 3rem    ;
+    padding: 1rem 3rem 0rem 3rem;
+    margin-bottom: 7rem
 }
 .projects {
     position: relative;
@@ -116,9 +116,9 @@ li {
     width: auto;
     height: auto;
     float: right;
-    /* max-width: 600px;
-    max-height: 600px;    */
-    margin: 0 40px 30px 0;
+    max-width: 600px;
+    max-height: 600px;   
+    margin: auto;
     vertical-align: middle;
     justify-content: center
 
@@ -139,59 +139,73 @@ li {
     margin-right: 0px;
 }
 #project6 {
+    margin-right: 50px;
+}
+#project7 {
     margin-right: 0px;
 }
   
 
   .pagination {
-      margin: 0 0 0 5px;
+      margin: 0 0 0 0px;
       font-size: 13px;
   }
   .img-name {
-      font-size: 12px;
-      text-align: right;
-      margin: 2px 5px 0 0;
+      font-size: 11px;
+      text-align: left;
+      margin: 2px 0 0 0px;
       letter-spacing: 0.5px;
   }
+  
   .imgslide img {
     width: auto;
     height: auto;
-    /* max-width: 600px;
-    max-height: 600px;  */
+    max-width: 600px;
+    max-height: 600px; 
   }
   
   
   .prev {
     cursor: w-resize;
     position: absolute;
-    height: 105%;
+    height: 100%;
     width: 50%;
     left: 0;
     top: 0;
+    max-width: 600px;
+    max-height: 600px; 
     /* padding: 10%  0 10% 10%; */
   }
   
   .next {
     cursor: e-resize;
     position: absolute;
-    height: 105%;
+    height: 100%;
     width: 50%;
     right: 0;
     top: 0;
+    max-width: 600px;
+    max-height: 600px; 
     /* padding: 10% 10% 10% 0 */
   }
 
   /* Small devices */
+  @media (min-width: 0px) and (max-width: 767px) {
+    .projects {
+        width: 100%;
+        margin: 0px !important
+    }
+}
 @media only screen and (max-width: 992px) {
     .left-column {
         width: 100%;
-        /* height: 100%; */
+        height: 100%;
         padding: 1rem;
         margin-bottom: 50px;
     }
     .about {
         width: 100%;
-        padding-right: 0px
+        padding-right: 0px;
     }
 
     .right-column {
@@ -200,21 +214,21 @@ li {
         overflow: auto;
         height: auto
     }
-    .projects {
-        margin: 20px auto 50px auto;
-        width: 100%;
-        height: 100%;
-        padding: 20px;
+
+    .projects  {
+        width: auto;
+        height: auto;
+        max-width: 500px; 
         float: none;
-        /* overflow: auto; */
-    }
-    .imgslide {
-        /* padding: 4% */
+        margin: 0 auto 0 auto;    
     }
     .imgslide img {
-        width: 100%;
-        max-height: 900px;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 500px
     }
+
     .events {
         padding-top: 30px;
     }
