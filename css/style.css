@@ -51,7 +51,8 @@ body {
 }
  span:hover {
     color: blue;
-    cursor: crosshair
+    cursor: crosshair;
+    font-weight: bold
 }
 #info1 {
 padding-left: 0px;
@@ -195,6 +196,19 @@ li {
         width: 100%;
         margin: 0px !important
     }
+    .name {
+        padding-top: 100px !important;
+        text-align: center
+    }
+    .name span {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        padding: 0 20px 0 20px;
+        
+    }
+    #info1 {
+        padding-left: 20px
+    }
 }
 @media only screen and (max-width: 992px) {
     .left-column {
@@ -215,20 +229,30 @@ li {
         height: auto
     }
 
-    .projects  {
+    .projects {
+        position: relative;
+        font-size: 1em;
         width: auto;
         height: auto;
-        max-width: 500px; 
-        float: none;
-        margin: 0 auto 0 auto;    
+        float: right;
+        max-width: 600px;
+        max-height: 600px;   
+        margin: auto;
+        vertical-align: middle;
+        justify-content: center
+    
+    }
+    .imgslide {
+    max-width: 600px;
+    max-height: 600px
     }
     .imgslide img {
         width: auto;
         height: auto;
         max-width: 100%;
-        max-height: 500px
+        max-height: 600px;
+        
     }
-
     .events {
         padding-top: 30px;
     }
@@ -236,10 +260,7 @@ li {
         width: 100%;
         padding-top: 200px;
     }
-    .prjct {
-        padding: 1.2rem;
-    }
- 
+
 }
 /* laptops */
 @media only screen and (min-width: 992px) {
