@@ -1,3 +1,15 @@
+newParagraph = (index) => {
+  let i;
+  let x = document.getElementsByClassName("paragraph");
+  if (index > x.length) { index = 1 }
+  if (index < 1) { index = x.length }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  console.log(x)
+  x[Math.floor(Math.random()* x.length)].style.display = "block";
+}
+newParagraph()
 
 let projectIndexes = {
   project1: 1,
@@ -46,17 +58,6 @@ function showDivs(project, index) {
   }
 }
 
-window.onload = function newParagraph(project, index) {
-  let i;
-  let x = document.getElementsByClassName("paragraph");
-  if (index > x.length) { index = 1 }
-  if (index < 1) { index = x.length }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  console.log(x)
-  x[Math.floor(Math.random()* x.length)].style.display = "block";
-}
 
 // Show random text onload
 // window.onload = function newParagraph() {
