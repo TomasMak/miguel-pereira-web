@@ -7,6 +7,11 @@
 body {
     font-size: 100%;
 }
+a {
+    color:#333 !important;
+    text-decoration:none !important;
+  
+}
 .container {
     padding: 0;
     width: 100%;
@@ -14,8 +19,7 @@ body {
 .left-column {
     width: 40%;
     height: 100vh;
-
-    padding-top: 16px;
+    padding: 16px 0 0 25px;
     position: relative;
     /* background-color: lightgrey */
 }
@@ -49,8 +53,8 @@ body {
     letter-spacing: 0.5px;
     padding: 0 50px 0 50px;
 }
- span:hover {
-    color: blue;
+ a:hover {
+    color: blue !important;
     cursor: crosshair;
     font-weight: bold
 }
@@ -99,17 +103,16 @@ li {
 }
 .copy {
     text-align: right;
-    font-size: 13px;
-    opacity: 0.5;
+    font-size: 11px;
+    opacity: 0.7;
     margin-bottom: 5px;
     letter-spacing: 0.5px
 }
 
 /* img library */
 .prjct {
-    /* min-height: 700px; */
     padding: 1rem 3rem 0rem 3rem;
-    margin-bottom: 7rem
+    margin-bottom: 7rem;
 }
 .projects {
     position: relative;
@@ -125,7 +128,7 @@ li {
 
 }
 #project1 {
-    margin-right: 0px;
+    margin-right: 70px;
 }
 #project2 {
     margin-right: 170px;
@@ -227,6 +230,10 @@ li {
         padding: 0;
         overflow: auto;
         height: auto
+    }
+    .prjct {
+        padding: 1rem;
+        margin-bottom: 7rem
     }
 
     .projects {
