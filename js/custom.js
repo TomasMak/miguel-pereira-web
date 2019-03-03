@@ -6,7 +6,6 @@ newParagraph = (index) => {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  console.log(x)
   x[Math.floor(Math.random()* x.length)].style.display = "block";
 }
 newParagraph()
