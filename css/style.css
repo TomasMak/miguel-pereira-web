@@ -48,19 +48,23 @@ a {
     height: 5%;   
 }
 
-.name span {
+.name div {
     font-size: 13px;
-    letter-spacing: 0.5px;
-    padding: 0 50px 0 50px;
+    letter-spacing: .5px;
+    width: 33.3%;
+    float: left;
+    /* padding: 0 70px 5px 50px; */
+}
+a {
+    padding-bottom: 3px
 }
  a:hover {
-    color: blue !important;
+    color: #333 !important;
     cursor: crosshair;
-    font-weight: bold
+    font-weight: bold;
+    border-bottom: #333 solid 1px;
 }
-#info1 {
-padding-left: 0px;
-}
+
 .events {
     /* padding-top: 40px; */
     margin-bottom: 10px;
@@ -74,9 +78,9 @@ padding-left: 0px;
     font-weight: 100;
     font-size: 14px;
 }
- span:empty::after{
+ /* span:empty::after{
     content: attr(data-empty-message);
-  }
+  } */
   .dates {
       width: 10%;
       float: left;
@@ -104,8 +108,7 @@ li {
 .copy {
     text-align: right;
     font-size: 11px;
-    opacity: 0.7;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     letter-spacing: 0.5px
 }
 
@@ -203,14 +206,15 @@ li {
         padding-top: 100px !important;
         text-align: center
     }
-    .name span {
-        font-size: 13px;
-        letter-spacing: 0.5px;
-        padding: 0 20px 0 20px;
-        
+    .name div {
+        margin: 0 auto 0 auto ;
+        align-content: center;
+        text-align: center
     }
-    #info1 {
-        padding-left: 20px
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .left-column {
+        padding: 2rem !important;
     }
 }
 @media only screen and (max-width: 992px) {
@@ -318,21 +322,20 @@ li {
 
     .about {
         width: 100%;
-        padding: 20px 0 0 0
-       
+        padding: 0 0 0 0  
     }
-    .left-column {
-        /* height: auto; */
+    #project1 {
+        margin-right: 0px;
     }
 }
 
 /* Large laptops and dekstops */
 @media only screen and (min-width: 1400px) {
     .left-column {
-        padding-left: 15rem
+        padding-left: 12rem
     }
     .right-column {
-        padding-right: 20rem
+        padding-right: 12rem
     }
     .events {
         padding-top: 40px;
