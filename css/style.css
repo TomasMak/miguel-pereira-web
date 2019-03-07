@@ -330,10 +330,11 @@ li {
 /* Large laptops and dekstops */
 @media only screen and (min-width: 1400px) {
     .left-column {
-        padding-left: 12rem
+        padding-left: 15rem
     }
     .right-column {
-        padding-right: 12rem
+        padding-right: 15rem;
+        padding-top: 38px
     }
     .events {
         padding-top: 40px;
@@ -341,4 +342,17 @@ li {
     .about {
         padding-top: 40px;
     }
+    .about p {
+        font-size: 17px;
+    }
+    .name div {
+        font-size: 17px;
+    }
+    .pagination {
+        font-size: 17px;
+    }
+    .img-name {
+        font-size: 15px;
+    }  
+
 }
