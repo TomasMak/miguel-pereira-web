@@ -63,47 +63,6 @@ a {
     font-weight: bold;
     border-bottom: #333 solid 1px;
 }
-
-.events {
-    /* padding-top: 40px; */
-    margin-bottom: 10px;
-    width: 100%;
-    height: 30%;
-    overflow: visible
-  
-}
-.events h5 {
-    letter-spacing: 1px;
-    font-weight: 100;
-    font-size: 14px;
-}
- /* span:empty::after{
-    content: attr(data-empty-message);
-  } */
-  .dates {
-      width: 10%;
-      float: left;
-      font-size: 13px;
-      letter-spacing: 0.5px;
-      /* margin-right: 30px */
-}
-.list {
-    list-style-type: none ;   
-    width: 90%;
-    float: left;
-    padding-left: 0px;
-    white-space: normal;
-    margin-bottom: 0px; 
-    overflow: visible;   
-}
- .list span {
-    font-size: 13px;
-    letter-spacing: 0.5px
-}
-
-li {
-    font-size: 13px;
-}
 .copy {
     text-align: right;
     font-size: 11px;
@@ -112,8 +71,9 @@ li {
 }
 
 /* img library */
+
 .prjct {
-    padding: 1rem 1git arem 0rem 3rem;
+    padding: 1rem 1rem 0rem 3rem;
     margin-bottom: 7rem;
 }
 .projects {
@@ -148,61 +108,60 @@ li {
     margin-right: 0px;
 }
   
+.pagination {
+    margin: 0 0 0 0px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+.img-name {
+    font-size: 11px;
+    text-align: left;
+    margin: 2px 0 0 0px;
+    letter-spacing: 0.5px;
+}
 
-  .pagination {
-      margin: 0 0 0 0px;
-      font-size: 13px;
-      letter-spacing: 0.5px;
-  }
-  .img-name {
-      font-size: 11px;
-      text-align: left;
-      margin: 2px 0 0 0px;
-      letter-spacing: 0.5px;
-  }
-  
-  .imgslide img {
-    width: auto;
-    height: auto;
-    max-width: 600px;
-    max-height: 600px; 
-  }
-  
-  
-  .prev {
-    cursor: w-resize;
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    left: 0;
-    top: 0;
-    max-width: 600px;
-    max-height: 600px; 
-    /* padding: 10%  0 10% 10%; */
-  }
-  
-  .next {
-    cursor: e-resize;
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    right: 0;
-    top: 0;
-    max-width: 600px;
-    max-height: 600px; 
-    /* padding: 10% 10% 10% 0 */
-  }
+.imgslide img {
+width: auto;
+height: auto;
+max-width: 600px;
+max-height: 600px; 
+}
 
-  /* Small devices */
-  @media (min-width: 0px) and (max-width: 767px) {
-    .projects {
-        width: 100%;
-        margin: 0px !important
-    }
-    .name {
-        padding-top: 100px !important;
-        text-align: center;
-    }
+
+.prev {
+cursor: w-resize;
+position: absolute;
+height: 100%;
+width: 50%;
+left: 0;
+top: 0;
+max-width: 600px;
+max-height: 600px; 
+/* padding: 10%  0 10% 10%; */
+}
+  
+.next {
+cursor: e-resize;
+position: absolute;
+height: 100%;
+width: 50%;
+right: 0;
+top: 0;
+max-width: 600px;
+max-height: 600px; 
+/* padding: 10% 10% 10% 0 */
+}
+
+/* Small devices */
+@media (min-width: 0px) and (max-width: 767px) {
+.projects {
+    width: 100%;
+    margin: 0px !important
+}
+.name {
+    padding-top: 100px !important;
+    text-align: center;
+}
    
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
@@ -273,7 +232,7 @@ li {
     }
     .right-column {
         float: right; 
-        margin-top: 15px
+        margin-top: 15px;
     }
 
     .events {
@@ -343,16 +302,18 @@ li {
         padding-top: 40px;
     }
     .about p {
-        font-size: 17px;
+        font-size: 16px;
     }
     .name div {
-        font-size: 17px;
+        font-size: 16px;
     }
     .pagination {
-        font-size: 17px;
+        font-size: 16px;
     }
-    .img-name {
-        font-size: 15px;
+    .img-name, .copy {
+        font-size: 14px;
     }  
-
+    .prjct {
+        margin-bottom: 11rem
+    }
 }
