@@ -1,3 +1,5 @@
+// Random paragraph
+
 newParagraph = (index) => {
   let i;
   let x = document.getElementsByClassName("paragraph");
@@ -9,6 +11,8 @@ newParagraph = (index) => {
   x[Math.floor(Math.random() * x.length)].style.display = "block";
 }
 newParagraph()
+
+// SECTION TO ADD NEW PROJECTS //////////////
 
 let projectIndexes = {
   project1: 1,
@@ -27,6 +31,7 @@ showDivs("project5", projectIndexes.project5);
 // showDivs("project6", projectIndexes.project6);
 // showDivs("project7", projectIndexes.project7);
 
+// Image library 
 function plusDivs(project, n) {
   showDivs(project, projectIndexes[project] += n);
 }
@@ -42,9 +47,7 @@ function showDivs(project, index) {
   x[index - 1].style.display = "block";
   document.getElementById(project).getElementsByClassName("pagination")[0].innerText = index + ' / ' + x.length;
   projectIndexes[project] = index;
-
   let elements = document.getElementById(project).querySelector('.imgslide').children;
-
   let imgNames = [];
   for (let i = 0; i < elements.length; i++) {
     if (elements[i].src !== undefined) {

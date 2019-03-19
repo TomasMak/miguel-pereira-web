@@ -7,6 +7,10 @@
 body {
     font-size: 100%;
 }
+::selection {
+    color: white;
+    background-color: #333
+}
 a {
     color:#333 !important;
     text-decoration:none !important;
