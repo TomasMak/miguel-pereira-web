@@ -7,6 +7,30 @@
 body {
     font-size: 100%;
 }
+/* ---------------------------------- */
+/* Image library projects. For new project add a unique ID, for example #project8 and add the wanted margin */
+#project1 {
+    margin-right: 0px;
+}
+#project2 {
+    margin-right: 160px;
+}
+#project3 {
+    margin-right: 50px;
+}
+#project4 {
+    margin-right: 0px;
+}
+#project5 {
+    margin-right: 160px;
+}
+#project6 {
+    margin-right: 50px;
+}
+#project7 {
+    margin-right: 0px;
+}
+/* ----------------------------  */
 ::selection {
     color: white;
     background-color: #333
@@ -53,19 +77,18 @@ a {
 }
 
 .name div {
-    font-size: 13px;
-    letter-spacing: .5px;
     width: 33.3%;
     float: left;
 }
 a {
-    padding-bottom: 3px
+    font-size: 13px;
+    letter-spacing: .5px;
+    padding: 4px 0;
 }
  a:hover {
     color: #333 !important;
     cursor: crosshair;
-    font-weight: bold;
-    border-bottom: #333 solid 1px;
+    text-decoration: line-through !important
 }
 .copy {
     text-align: right;
@@ -89,27 +112,6 @@ a {
     max-width: 600px;
     max-height: 600px;   
     margin: auto;
-}
-#project1 {
-    margin-right: 0px;
-}
-#project2 {
-    margin-right: 160px;
-}
-#project3 {
-    margin-right: 50px;
-}
-#project4 {
-    margin-right: 0px;
-}
-#project5 {
-    margin-right: 160px;
-}
-#project6 {
-    margin-right: 50px;
-}
-#project7 {
-    margin-right: 0px;
 }
   
 .pagination {
